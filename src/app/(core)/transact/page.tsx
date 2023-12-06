@@ -120,10 +120,10 @@ function Transact() {
             </div>
           </HorizontalScroll>
         </div>
+        <div className={`${classes["section-title"]}`}>
+          <text>Shortcuts</text>
+        </div>
         <div className={`${classes["home-shortcut"]}`}>
-          <div className={`${classes["section-title"]}`}>
-            <text>Shortcuts</text>
-          </div>
           <HorizontalScrollFull>
             <div className={`${classes["shortcut-menus"]}`}>
               <div className={`${classes["shortcut-item"]}`}>
@@ -235,6 +235,57 @@ function Transact() {
               </div>
             </div>
           </HorizontalScrollFull>
+        </div>
+        <div className={`${classes["section-title"]}`}>
+          <text>Favorite Actions</text>
+        </div>
+        <div className={`${classes["favorite-actions"]}`}>
+          <div className={`${classes["actions-list"]}`}>
+            <div className={`${classes["recent-transact"]}`}>
+              <div className={`${classes["line-item"]}`}>
+                <div className={`${classes["favorites"]}`}>
+                  <div className={`${classes["logo-item"]}`}>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M9.19642 8.3162H5.35576L8.68471 5.0041V6.69108H10.6303V3.48583C10.6303 2.01816 8.72969 1.44458 7.91433 2.65921L3.25268 7.95631C2.59476 8.94038 3.29766 10.2675 4.48416 10.2675H8.61161V17.7858H10.5572V9.68828C10.5572 8.93476 9.94431 8.32182 9.1908 8.32182L9.19642 8.3162Z"
+                        fill="#4CCDDB"
+                      />
+                      <path
+                        d="M16.5541 21.3453L21.2158 16.0482C21.8737 15.0641 21.1708 13.737 19.9843 13.737H15.8569V6.21875H13.9112V14.3162C13.9112 15.0698 14.5242 15.6827 15.2777 15.6827H19.1183L15.7894 18.9948V17.3078H13.8438V20.5131C13.8438 21.9807 15.7444 22.5543 16.5598 21.3397L16.5541 21.3453Z"
+                        fill="#4CCDDB"
+                      />
+                    </svg>
+                  </div>
+                  <div className={`${classes["right-item"]}`}>
+                    <text className={`${classes["type-item"]}`}>Transfer</text>
+                    <text className={`${classes["text-item"]}`}>Pay Evan</text>
+                  </div>
+                </div>
+                <div className={`${classes["pinarrow"]}`}>
+                  <div className={`${classes["logo-arrow"]}`}>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M9.00344 6.70978C8.61344 7.09978 8.61344 7.72978 9.00344 8.11978L12.8834 11.9998L9.00344 15.8798C8.61344 16.2698 8.61344 16.8998 9.00344 17.2898C9.39344 17.6798 10.0234 17.6798 10.4134 17.2898L15.0034 12.6998C15.3934 12.3098 15.3934 11.6798 15.0034 11.2898L10.4134 6.69978C10.0334 6.31978 9.39344 6.31978 9.00344 6.70978Z"
+                        fill="#A0A0A0"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>
