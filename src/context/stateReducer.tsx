@@ -2,11 +2,11 @@
 import { reducerCases } from "./constants";
 
 export interface InitialState {
-  loading: boolean;
+  isLoading: boolean;
 }
 
 export const initialState: InitialState = {
-  loading: false,
+  isLoading: false,
 };
 
 export const reducer = (state: InitialState, action: any) => {
@@ -14,7 +14,7 @@ export const reducer = (state: InitialState, action: any) => {
     case reducerCases.SET_LOADING:
       return {
         ...state,
-        loading: action.loading,
+        isLoading: action.isLoading,
       };
     default:
       return state;

@@ -9,7 +9,7 @@ import MainComponent from "./components/mainComponent/mainComponent";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "BNI Labs",
+  title: "PFM Clone",
   description: "",
 };
 
@@ -18,7 +18,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={inter.className}>
         <StateProvider initialState={initialState} reducer={reducer}>
-          <MainComponent />
+          {/* <MainComponent /> */}
           {children}
         </StateProvider>
       </body>
