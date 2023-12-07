@@ -1,0 +1,75 @@
+.content-container {
+    padding: 24px 24px 40px 24px;
+}
+
+.content-title {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.period-group {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--spacing-spacing-416-px, 16px);
+    align-items: center;
+}
+
+.period-text {
+    color: var(--functional-bw-tones-charcoal-gray, #4e4e4e);
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: TT Interphases Pro;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    width: 100%;
+    line-height: 140%;
+}
+
+.period-button {
+    display: flex;
+}
+
+.detail-button {
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: 600;
+    color: #ff8736;
+    text-underline-offset: 2px;
+    white-space: nowrap;
+    margin-right: 4px;
+}
+
+.content-container {
+    margin-top: 16px;
+    border-radius: var(--rounded-corner-medium-16-px, 16px);
+    border-top: 1px solid var(--functional-bw-tones-snow-white, #f0f0f0);
+    border-right: 1px solid var(--functional-bw-tones-snow-white, #f0f0f0);
+    border-bottom: 1px solid var(--functional-bw-tones-snow-white, #f0f0f0);
+    border-left: 1px solid var(--functional-bw-tones-snow-white, #f0f0f0);
+    background: var(--functional-bw-tones-white, #fff);
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.account-selection-card {
+    border-radius: 8px;
+    border-top: 1px solid var(--functional-bw-tones-snow-white, #f0f0f0);
+    border-right: 1px solid var(--functional-bw-tones-snow-white, #f0f0f0);
+    border-bottom: 1px solid var(--functional-bw-tones-snow-white, #f0f0f0);
+    border-left: 1px solid var(--functional-bw-tones-snow-white, #f0f0f0);
+    background: var(--functional-bw-tones-white, #fff);
+    padding: 12px 16px;
+}
+
+.account-selection-text {
+    color: var(--functional-bw-tones-black, #0e0e0e);
+    font-feature-settings: "clig" off, "liga" off;
+    font-family: TT Interphases Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}

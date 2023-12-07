@@ -1,0 +1,335 @@
+.container {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+.title-account {
+  display: flex;
+  width: 375px;
+  padding: 16px 24px 8px 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-text {
+  color: #000;
+
+  font-feature-settings: "clig" off, "liga" off;
+  /* Headlines/H4 */
+  font-family: TT Interphases Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 19.2px */
+}
+
+.title-button {
+  display: flex;
+  align-items: flex-end;
+  gap: 5px;
+}
+.title-button text {
+  color: var(--ui-colors-orange-300-primary, #ff8736);
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Body/Tertiary Button */
+  font-family: TT Interphases Pro;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 16.8px */
+  text-decoration-line: underline;
+}
+
+.account-container {
+  display: flex;
+  padding: 0px 24px;
+  align-items: center;
+  gap: 6px;
+  align-self: stretch;
+}
+.account-card {
+  display: flex;
+  width: 306px;
+  height: 175px;
+  padding: 16px 16px 32px 16px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-radius: 8px;
+  background: var(--brand-bni-orange-orange-600-primary, #ff8736);
+}
+
+.account-card-title {
+  display: flex;
+  flex-direction: column;
+  /* background-color: red; */
+  width: 100%;
+}
+.account-card-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.account-card-name text {
+  color: var(--Func-Black, #0e0e0e);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Body/Body 3-Regular */
+  font-family: TT Interphases Pro;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 16.8px */
+}
+
+.account-card-title-tag {
+  display: flex;
+  padding: 4px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 16px;
+  background: var(--ui-colors-bw-white, #fff);
+}
+.account-card-number {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  align-self: stretch;
+}
+.account-card-number text {
+  color: var(--Func-Black, #0e0e0e);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Headlines/H4 */
+  font-family: TT Interphases Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 19.2px */
+}
+
+.balance-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.balance-card-container text {
+  color: var(--functional-bw-tones-black, #0e0e0e);
+  text-align: center;
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Body/Body 3-Regular */
+  font-family: TT Interphases Pro;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 16.8px */
+}
+.balance-card-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.balance-card-with-icon text {
+  color: #0e0e0e;
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Headlines/H2 */
+  font-family: TT Interphases Pro;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 28.8px */
+}
+
+.balance-card-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.card-vector {
+  display: flex;
+  width: 113px;
+  height: 143px;
+  position: absolute;
+  right: -0.5px;
+  fill: #ff6a05;
+}
+
+.section-title {
+  display: flex;
+  width: 375px;
+  padding: 16px 24px 8px 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-title text {
+  color: #000;
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* Headlines/H4 */
+  font-family: TT Interphases Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 19.2px */
+}
+
+.home-shortcut {
+  display: flex;
+  width: 375px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.shortcut-menus {
+  display: flex;
+  width: 375px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  align-self: center;
+}
+
+.shortcut-item {
+  display: flex;
+  width: 115.833px;
+  height: 100%;
+  min-width: 114px;
+  padding: 8px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.shortcut-item text {
+  color: #000;
+  text-align: center;
+  /* leading-trim: both;
+  text-edge: cap; */
+  font-family: TT Interphases Pro;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.shortcut-item-2 {
+  display: flex;
+  width: 115.833px;
+  height: 72px;
+  min-width: 114px;
+  padding: 8px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.icon-item-2 {
+  display: flex;
+  width: 56px;
+  height: 56px;
+  padding: 14px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: var(--theme-colors-blue-200, #99b5ff);
+}
+
+.shortcut-item-2 text {
+  color: #000;
+  text-align: center;
+  /* leading-trim: both;
+  text-edge: cap; */
+  font-family: TT Interphases Pro;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.actions-list {
+  display: flex;
+  padding: 0px 24px;
+  align-items: flex-start;
+  gap: 24px;
+  /* background-color: green; */
+}
+.recent-transact {
+  display: flex;
+  width: 327px;
+  flex-direction: column;
+  align-items: flex-start;
+  /* background-color: red; */
+}
+.line-item {
+  display: flex;
+  padding: 16px 0px 16px 8px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-bottom: 1px solid var(--functional-bw-tones-pale-gray, #dadada);
+}
+.logo-item {
+  width: 24px;
+  height: 24px;
+}
+.right-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+.type-item {
+  color: var(--functional-bw-tones-black, #0e0e0e);
+  text-align: center;
+  /* leading-trim: both;
+  text-edge: cap; */
+  font-family: TT Interphases Pro;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.text-item {
+  color: #000;
+  text-align: center;
+  /* leading-trim: both;
+  text-edge: cap; */
+  font-family: TT Interphases Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.favorites {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-spacing-312-px, 12px);
+}
+.pinarrow {
+  display: flex;
+  width: 145px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4px;
+}
+
+.logo-arrow {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
