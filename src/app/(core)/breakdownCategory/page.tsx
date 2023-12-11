@@ -28,9 +28,17 @@ export default function BreakdownCategory() {
 
   useEffect(() => {
     // eslint-disable-next-line
-    // let AndroidTest:any
-    if (global?.window["AndroidTest"]) {
-      const token = global?.window["AndroidTest"].getToken();
+    let AndroidTest: any = null;
+
+    // if (global?.window["AndroidTest"]) {
+    //   const token = global?.window["AndroidTest"].getToken();
+    //   setToken(token);
+    // } else {
+    //   setToken("KAGAK DAPET");
+    // }
+
+    if (AndroidTest !== null) {
+      const token = AndroidTest.getToken();
       setToken(token);
     } else {
       setToken("KAGAK DAPET");
