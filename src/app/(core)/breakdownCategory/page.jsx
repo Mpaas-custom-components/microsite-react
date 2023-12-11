@@ -15,7 +15,7 @@ import SwipeUpCard from "@/app/components/swipeUpCard/swipeUpCard";
 
 export default function BreakdownCategory() {
   const [{ isLoading }] = useStateProvider();
-  const [loading, setLoading] = useState<boolean | null>(true);
+  const [loading, setLoading] = (useState < boolean) | (null > true);
   const [isCardOpen, setIsCardOpen] = useState(false);
   const [token, setToken] = useState("");
   const [functionAndroid, setFunctionAndroid] = useState(null);
