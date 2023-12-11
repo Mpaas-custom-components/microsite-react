@@ -2,5 +2,7 @@
   "extends": "next/core-web-vitals",
   "globals": {
     "AndroidTest": "readonly"
-  }
+  },
+
+  "ignorePatterns": ["jest.config.js", "lib", "src/app/(core)/breakdownCategory/page.tsx"]
 }

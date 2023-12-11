@@ -1,5 +1,5 @@
-// declare global {
-//   interface Window {
-//     Android: any;
-//   }
-// }
+declare global {
+  interface Window {
+    AndroidTest: any;
+  }
+}

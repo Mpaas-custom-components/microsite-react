@@ -1,5 +1,5 @@
-"use client";
 /* global AndroidTest */
+"use client";
 
 import React from "react";
 import classes from "./breakdownCategory.module.css";
@@ -18,6 +18,7 @@ export default function BreakdownCategory() {
   const [loading, setLoading] = useState<boolean | null>(true);
   const [isCardOpen, setIsCardOpen] = useState(false);
   const [token, setToken] = useState("");
+  const [functionAndroid, setFunctionAndroid] = useState(null);
 
   const router = useRouter();
 
@@ -27,8 +28,9 @@ export default function BreakdownCategory() {
 
   useEffect(() => {
     // eslint-disable-next-line
-    if (AndroidTest) {
-      const token = AndroidTest.getToken();
+    // let AndroidTest:any
+    if (window["AndroidTest"]) {
+      const token = window["AndroidTest"].getToken();
       setToken(token);
     } else {
       setToken("KAGAK DAPET");
