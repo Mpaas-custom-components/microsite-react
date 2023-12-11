@@ -25,6 +25,7 @@ export default function BreakdownCategory() {
   };
 
   useEffect(() => {
+    let AndroidTest: any;
     if (AndroidTest) {
       const token = AndroidTest.getToken();
       setToken(token);
