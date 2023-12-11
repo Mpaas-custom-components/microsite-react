@@ -5,12 +5,9 @@ import React from "react";
 import classes from "./breakdownCategory.module.css";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import TotalDownloadImage from "/assets/images/totalDownload.png";
-import TotalUsersImage from "../../../../public/assets/images/totalUsers.png";
-import DeleteSearch from "/assets/images/delete-search.png";
+
 import { useStateProvider } from "@/context/stateContext";
 
-import BackArrow from "../../../../public/assets/images/ic_common_arrow_back.svg";
 import SwipeUpCard from "@/app/components/swipeUpCard/swipeUpCard";
 
 export default function BreakdownCategory() {
@@ -43,9 +40,7 @@ export default function BreakdownCategory() {
         <div className={`${classes.topBar_container}`}>
           <div className={`${classes.topBar_systemBar}`}></div>
           <div className={`${classes.topBar_titleBar}`}>
-            <div className={`${classes.left_icon}`}>
-              <img width="0" height="0" className={`${classes.left_icon_image}`} src="/assets/images/ic_common_arrow_back.png" alt="" />
-            </div>
+            <div className={`${classes.left_icon}`}>{/* <img width="0" height="0" className={`${classes.left_icon_image}`} src="/assets/images/ic_common_arrow_back.png" alt="" /> */}</div>
             <div className={`${classes.title_container}`}>
               <div className={`${classes.topBar_title}`}>{token}</div>
             </div>
