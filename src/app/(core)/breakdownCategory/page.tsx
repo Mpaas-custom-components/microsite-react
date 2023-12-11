@@ -1,4 +1,5 @@
 "use client";
+/* global AndroidTest */
 
 import React from "react";
 import classes from "./breakdownCategory.module.css";
@@ -25,7 +26,7 @@ export default function BreakdownCategory() {
   };
 
   useEffect(() => {
-    let AndroidTest: any;
+    // eslint-disable-next-line
     if (AndroidTest) {
       const token = AndroidTest.getToken();
       setToken(token);
