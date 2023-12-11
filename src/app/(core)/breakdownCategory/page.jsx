@@ -56,9 +56,7 @@ export default function BreakdownCategory() {
                 <div className={`${classes.section1_nominal}`}>Rp7.000.000</div>
                 <div className={`${classes.section1_totalTransaksi}`}>dari 2 total transaksi</div>
               </div>
-              <div className={`${classes.section1_nominal_right}`}>
-                <img className={`${classes.section1_nominal_right_image}`} width="0" height="0" src="/assets/images/ic_common_money_out.png" alt="" />
-              </div>
+              <div className={`${classes.section1_nominal_right}`}>{/* <img className={`${classes.section1_nominal_right_image}`} width="0" height="0" src="/assets/images/ic_common_money_out.png" alt="" /> */}</div>
             </div>
           </div>
           <div className={`${classes.section2_container}`}>
@@ -67,7 +65,7 @@ export default function BreakdownCategory() {
           </div>
         </div>
 
-        <SwipeUpCard isOpen={isCardOpen} onClose={handleSwipeUp}>
+        {/* <SwipeUpCard isOpen={isCardOpen} onClose={handleSwipeUp}>
           <div className={`${classes.casa_container}`}>
             <div className={`${classes.casa_list_container}`}>
               <div className={`${classes.casa_list_container_title}`}>7 Juni 2023</div>
@@ -325,7 +323,7 @@ export default function BreakdownCategory() {
               </div>
             </div>
           </div>
-        </SwipeUpCard>
+        </SwipeUpCard> */}
       </div>
     </>
   );
