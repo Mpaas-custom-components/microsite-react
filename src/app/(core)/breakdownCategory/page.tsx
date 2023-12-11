@@ -5,9 +5,12 @@ import React from "react";
 import classes from "./breakdownCategory.module.css";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-
+import TotalDownloadImage from "/assets/images/totalDownload.png";
+import TotalUsersImage from "../../../../public/assets/images/totalUsers.png";
+import DeleteSearch from "/assets/images/delete-search.png";
 import { useStateProvider } from "@/context/stateContext";
 
+import BackArrow from "../../../../public/assets/images/ic_common_arrow_back.svg";
 import SwipeUpCard from "@/app/components/swipeUpCard/swipeUpCard";
 
 export default function BreakdownCategory() {
@@ -26,8 +29,8 @@ export default function BreakdownCategory() {
   useEffect(() => {
     // eslint-disable-next-line
     // let AndroidTest:any
-    if (window["AndroidTest"]) {
-      const token = window["AndroidTest"].getToken();
+    if (global?.window["AndroidTest"]) {
+      const token = global?.window["AndroidTest"].getToken();
       setToken(token);
     } else {
       setToken("KAGAK DAPET");
@@ -40,7 +43,9 @@ export default function BreakdownCategory() {
         <div className={`${classes.topBar_container}`}>
           <div className={`${classes.topBar_systemBar}`}></div>
           <div className={`${classes.topBar_titleBar}`}>
-            <div className={`${classes.left_icon}`}>{/* <img width="0" height="0" className={`${classes.left_icon_image}`} src="/assets/images/ic_common_arrow_back.png" alt="" /> */}</div>
+            <div className={`${classes.left_icon}`}>
+              <img width="0" height="0" className={`${classes.left_icon_image}`} src="/assets/images/ic_common_arrow_back.png" alt="" />
+            </div>
             <div className={`${classes.title_container}`}>
               <div className={`${classes.topBar_title}`}>{token}</div>
             </div>
@@ -56,7 +61,9 @@ export default function BreakdownCategory() {
                 <div className={`${classes.section1_nominal}`}>Rp7.000.000</div>
                 <div className={`${classes.section1_totalTransaksi}`}>dari 2 total transaksi</div>
               </div>
-              <div className={`${classes.section1_nominal_right}`}>{/* <img className={`${classes.section1_nominal_right_image}`} width="0" height="0" src="/assets/images/ic_common_money_out.png" alt="" /> */}</div>
+              <div className={`${classes.section1_nominal_right}`}>
+                <img className={`${classes.section1_nominal_right_image}`} width="0" height="0" src="/assets/images/ic_common_money_out.png" alt="" />
+              </div>
             </div>
           </div>
           <div className={`${classes.section2_container}`}>
@@ -65,7 +72,7 @@ export default function BreakdownCategory() {
           </div>
         </div>
 
-        {/* <SwipeUpCard isOpen={isCardOpen} onClose={handleSwipeUp}>
+        <SwipeUpCard isOpen={isCardOpen} onClose={handleSwipeUp}>
           <div className={`${classes.casa_container}`}>
             <div className={`${classes.casa_list_container}`}>
               <div className={`${classes.casa_list_container_title}`}>7 Juni 2023</div>
@@ -323,7 +330,7 @@ export default function BreakdownCategory() {
               </div>
             </div>
           </div>
-        </SwipeUpCard> */}
+        </SwipeUpCard>
       </div>
     </>
   );
