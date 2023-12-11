@@ -16,12 +16,22 @@ export default function BreakdownCategory() {
   const [{ isLoading }] = useStateProvider();
   const [loading, setLoading] = useState<boolean | null>(true);
   const [isCardOpen, setIsCardOpen] = useState(false);
+  const [token, setToken] = useState("");
 
   const router = useRouter();
 
   const handleSwipeUp = () => {
     setIsCardOpen(!isCardOpen);
   };
+
+  useEffect(() => {
+    if (AndroidTest) {
+      const token = AndroidTest.getToken();
+      setToken(token);
+    } else {
+      setToken("KAGAK DAPET");
+    }
+  }, []);
 
   return (
     <>
@@ -33,7 +43,7 @@ export default function BreakdownCategory() {
               <img width="0" height="0" className={`${classes.left_icon_image}`} src="/assets/images/ic_common_arrow_back.png" alt="" />
             </div>
             <div className={`${classes.title_container}`}>
-              <div className={`${classes.topBar_title}`}>Uang Masuk</div>
+              <div className={`${classes.topBar_title}`}>{token}</div>
             </div>
             <div className={`${classes.right_icon}`}></div>
           </div>
@@ -57,41 +67,6 @@ export default function BreakdownCategory() {
             <div className={`${classes.section2_container_grafik_data}`}></div>
           </div>
         </div>
-
-        {/* Swipe Up Card */}
-        {/* <div className={`${classes.casa_container}`}>
-          <div className={`${classes.casa_header}`}>
-            <div className={`${classes.indicator}`}>
-              <div className={`${classes.indicator_bar}`}></div>
-            </div>
-            <div className={`${classes.casa_header_container}`}>
-              <div className={`${classes.casa_header_title}`}>Semua Transaksi</div>
-            </div>
-          </div>
-
-          <div className={`${classes.casa_list_container}`}>
-            <div className={`${classes.casa_list_container_title}`}>7 Juni 2023</div>
-            <div className={`${classes.divider}`}></div>
-            <div className={`${classes.casa_content}`}>
-              <div className={`${classes.casa_content_left}`}>
-                <div className={`${classes.avatar}`}>
-                  <img width="0" height="0" className={`${classes.avatar_image}`} src="" alt="" />
-                </div>
-              </div>
-
-              <div className={`${classes.casa_content_right}`}>
-                <div className={`${classes.casa_content_detail_top}`}>
-                  <div className={`${classes.title_transaction}`}>Transfer</div>
-                  <div className={`${classes.nominal_transaction}`}>+Rp2.000.000</div>
-                </div>
-                <div className={`${classes.casa_content_detail_bottom}`}>
-                  <div className={`${classes.username_transaction}`}>Transfer</div>
-                  <div className={`${classes.type_transaction}`}>+Rp2.000.000</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
 
         <SwipeUpCard isOpen={isCardOpen} onClose={handleSwipeUp}>
           <div className={`${classes.casa_container}`}>
